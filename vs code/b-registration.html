@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<title>REGISTRATION FORM</title>
+        <meta charset="utf-8">
+        <script src="\bootstrap-5.0.2-dist\css"></script>
+        <script src="\bootstrap-5.0.2-dist\js"></script>
+			<style>
+				h1
+				{
+					font-size: 25px;
+                    font-size: medium;
+                    font-style: normal;
+                    text-align: center;
+				}
+				body
+				{
+					font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+                    font-size: 20px;
+                    padding: 14px;
+                    margin: 2.50%;
+                    background-color: aquamarine;
+                    text-align: center;
+				}
+                h2
+                {
+                    text-align: center;
+                    font-style: inherit;
+                }
+                .container
+                {
+                    margin: center;
+                    padding: 14px;  
+                }
+			</style>
+			<div class="collapse navbar-collapse" id="navbarnav" align="right" >
+            <div class="navbar-nav">
+                <a class="nav-link" href="#">Home</a>&nbsp&nbsp&nbsp&nbsp
+                <a class="nav-link" href="#">Contact</a>&nbsp&nbsp&nbsp&nbsp
+                <a class="nav-link" href="#">about us</a>&nbsp&nbsp&nbsp&nbsp
+                <a class="nav-link" href="#">Login</a>&nbsp&nbsp&nbsp&nbsp
+            </div>
+			</div>
+    </head>
+	<body>
+		<h2>REGISTRATION HERE</h2>
+		<script>
+		function vform()
+			{	
+			var Email=document.b-registration.email.value;
+				if(email==null||email="")
+				{
+				alert("Email can't be blank");
+				return false;
+				}
+			}
+		</script>
+		<form action="#" method="post" onsubmit="return vform()">
+            <div class="container">
+		        <table>
+			        <tr>
+				        First Name:&nbsp &nbsp
+				        <input type="text" id="name" name="FirstName" placeholder="FirstName"><br><br>
+			        </tr>
+			        <tr>
+			        	middle Name:&nbsp &nbsp
+			        	<input type="text" id="name" name="MiddleName" placeholder="MiddleName"><br><br>
+			        </tr>
+			        <tr>
+			        	Last Name:&nbsp &nbsp
+			        	<input type="text" id="name" name="LastName" placeholder="LastName"><br><br>
+			    	</tr>
+			        <tr>
+			        	Password: &nbsp &nbsp
+			        	<input type="text" id="Password" placeholder="******"><br><br>
+			        </tr>
+			        <tr>
+			        	Confirm Password: &nbsp &nbsp
+		        		<input type="text" id="Confirm Password" placeholder="******"><br><br>
+			        </tr>
+			        <tr>
+			        	Gender: &nbsp &nbsp 
+			        	<input type="radio" name="gender" value="male" id="male" checked> Male &nbsp&nbsp&nbsp
+			        	<input type="radio" name="gender" value="female" id="female"> Female &nbsp&nbsp&nbsp
+			    		<input type="radio" name="gender" value="other" id="other"> Other &nbsp&nbsp&nbsp <br><br>
+			        </tr>
+			        <tr>
+			        	Email: &nbsp &nbsp 
+			    		<input type="text" name="email" placeholder="Email">
+			    		<br><br>
+			    		<input type="checkbox" name="terms" value="agree"> I agree to the terms and conditions.&nbsp &nbsp &nbsp &nbsp 
+					    <br><br>
+					    <button type="submit">REGISTER</button> &nbsp &nbsp
+					    <button type="button">RESET</button>
+			        </tr>
+		        </table>
+             </div>
+		</form>
+	</body>
+</html>

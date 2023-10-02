@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <script src="\bootstrap-5.0.2-dist\css"></script>
+    <script src="\bootstrap-5.0.2-dist\js"></script>
+    <style>
+      h1 
+      {
+        font-size: 25px;
+        font-size: medium;
+        font-style: normal;
+        text-align: center;
+      }
+      body
+      {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+        font-size: 20px;
+        padding: 14px;
+        margin: 2.50%;
+        background-color: aquamarine;
+        text-align: center;
+      }
+      h2
+      {
+        text-align: center;
+        font-style: inherit;
+      }
+      .container
+      {
+        margin: center;
+        padding: 14px;  
+      }
+    </style>
+    <div class="collapse navbar-collapse" id="navbarnav" align="right" >
+      <div class="navbar-nav">
+        <a class="nav-link" href="#">home</a>&nbsp&nbsp&nbsp&nbsp
+        <a class="nav-link" href="#">contact</a>&nbsp&nbsp&nbsp&nbsp
+        <a class="nav-link" href="#">about us</a>&nbsp&nbsp&nbsp&nbsp
+        <a class="nav-link" href="#">Login</a>&nbsp&nbsp&nbsp&nbsp
+      </div>
+    </div>
+  </head>
+  <body>
+    <h2>WELCOME</h2>
+    <script>
+      function vform()
+      {
+        var pass=document.c-login.password.value;
+        if(password==null||password=="")
+        {
+          alert("password should be 6 number");
+          return false;
+        }
+      }
+    </script>
+    <div class="container">
+      <table class="table table-border",background-color="#fff">
+        <form action="d-stok.html" method="post" onsubmit="return vform()">
+          <div>
+            <lable style="blold">Username : </lable>
+            <input type="text" name="name" id="name" placeholder="Enter your Username">
+          </div>
+          <br>
+          <div>
+            <label style="bold">Password : </label>
+            <input type="password" name="pass" id="pass" placeholder="Enter your password">
+          </div>
+          <br>
+          <div>
+            <button type="submit">Login</button>&nbsp;&nbsp;
+            <input type="reset" value="Clear">
+          </div>
+        </form>
+      </table>
+    </div>
+  </body>
+</html>
